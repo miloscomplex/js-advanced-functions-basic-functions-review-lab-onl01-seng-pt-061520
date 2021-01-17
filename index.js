@@ -21,8 +21,8 @@ const Calculator = {
 }
 
 function actionApplyer(initVal, b) {
-  b.forEach( test => {
-    let innerFunction = (test)(initVal)
+  b.forEach( func => {
+    let innerFunction = (func)(initVal)
     initVal = innerFunction
   })
   return initVal
