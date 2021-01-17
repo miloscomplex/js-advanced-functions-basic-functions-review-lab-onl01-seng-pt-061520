@@ -24,7 +24,6 @@ function actionApplyer(initVal, b) {
   b.forEach( test => {
     let innerFunction = (test)(initVal)
     initVal = innerFunction
-    return innerFunction
   })
   return initVal
 }
